@@ -1,0 +1,13 @@
+{
+  /** Common **/
+  "redis-ip": "",
+  "redis-port": ,
+  "redis-password": "",
+  "sql-url": "",
+  "sql-user": "",
+  "sql-password": "",
+  /** Server **/
+
+  /** Client **/
+  "dedicated-game": null
+}
