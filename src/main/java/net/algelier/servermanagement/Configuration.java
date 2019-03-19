@@ -16,12 +16,12 @@ import java.util.logging.Level;
 public class Configuration {
 
     private final ServerManagement serverManagement;
-    private String redisIp;
-    private String redisPassword;
-    private int redisPort;
-    private String sqlUrl;
-    private String sqlUser;
-    private String sqlPassword;
+    public String redisIp;
+    public String redisPassword;
+    public int redisPort;
+    public String sqlUrl;
+    public String sqlUser;
+    public String sqlPassword;
     private JsonObject jsonConfiguration;
 
     public Configuration(ServerManagement serverManagement, OptionSet options) {
