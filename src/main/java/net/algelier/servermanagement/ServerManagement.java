@@ -9,7 +9,6 @@ import net.algelier.servermanagement.common.log.ServerManagementLogger;
 import net.algelier.servermanagement.server.ServerManagementServer;
 import org.fusesource.jansi.AnsiConsole;
 
-import java.io.IOError;
 import java.io.IOException;
 import java.util.UUID;
 import java.util.concurrent.Executors;
@@ -20,7 +19,7 @@ import java.util.logging.Logger;
 public abstract class ServerManagement {
 
     private static ServerManagement instance;
-    public static Logger logger;
+    protected static Logger logger;
 
     protected final ConsoleReader consoleReader;
     protected final ScheduledExecutorService scheduledExecutorService;
@@ -111,7 +110,7 @@ public abstract class ServerManagement {
             return null;
     }
 
-    public UUID getUuid() {
+    public UUID getUUID() {
         return uuid;
     }
 
